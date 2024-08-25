@@ -120,9 +120,9 @@ export default function Component() {
             transition={{ duration: 1 }}
           >
             <h1 className="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Your Name
+              Tatenda Mhaka
             </h1>
-            <p className="text-2xl mb-8 text-gray-300">Innovative Software Developer</p>
+            <p className="text-2xl mb-8 text-gray-300">Innovative Software Developer | Mobile App Developer | Web Developer</p>
             <motion.button
               className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-bold py-2 px-6 rounded-full transition duration-300"
               whileHover={{ scale: 1.05 }}
