@@ -613,7 +613,7 @@ export default function Component() {
               <h3 className="text-2xl font-bold mb-6">Contact Details</h3>
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/+263780630422"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 text-white hover:text-green-400 transition-colors duration-300"
@@ -626,17 +626,17 @@ export default function Component() {
                   className="flex items-center space-x-3 text-white hover:text-blue-400 transition-colors duration-300"
                 >
                   <FaPhone className="text-2xl" />
-                  <span>+1 (234) 567-890</span>
+                  <span>+263 780 630 422</span>
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:tatendamhaka22@gmail"
                   className="flex items-center space-x-3 text-white hover:text-red-400 transition-colors duration-300"
                 >
                   <FaEnvelope className="text-2xl" />
-                  <span>your.email@example.com</span>
+                  <span>tatendamhaka22@gmail.com</span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com/in/tatenda-mhaka-a9ba671b4/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 text-white hover:text-blue-600 transition-colors duration-300"
