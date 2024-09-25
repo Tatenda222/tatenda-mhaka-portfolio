@@ -348,7 +348,7 @@ export default function Component() {
       tech: 'Flutter, Firebase',
       detailedTech: 'Flutter 2.5, Firebase Realtime Database, Firebase Authentication, Provider for state management',
       year: 2021,
-      image: '/placeholder.svg?height=200&width=300',
+      image: '/images/afrosoft.png',
       link: 'https://example.com/leave-management-app'
     },
     {
@@ -357,7 +357,7 @@ export default function Component() {
       tech: 'Kotlin',
       detailedTech: 'Kotlin 1.5, Android Jetpack, Retrofit for API calls, Room for local database, Coroutines for async operations',
       year: 2022,
-      image: '/placeholder.svg?height=200&width=300',
+      image: '/images/guava.png',
       link: 'https://example.com/guava-pay-mobile'
     },
     {
@@ -366,7 +366,7 @@ export default function Component() {
       tech: 'Angular',
       detailedTech: 'Angular 12, NgRx for state management, RxJS for reactive programming, Angular Material for UI components',
       year: 2022,
-      image: '/placeholder.svg?height=200&width=300',
+      image: '/images/guava.png',
       link: 'https://example.com/guava-pay-web'
     },
     {
@@ -375,8 +375,8 @@ export default function Component() {
       tech: 'React',
       detailedTech: 'React 17, Redux for state management, React Router for navigation, Styled Components for styling',
       year: 2023,
-      image: '/placeholder.svg?height=200&width=300',
-      link: 'https://example.com/afrocodemy'
+      image: '/images/afrocodemy.png',
+      link: 'https://www.afrocodemy.co.zw'
     },
     {
       name: 'E-Pay',
@@ -384,16 +384,25 @@ export default function Component() {
       tech: 'Flutter',
       detailedTech: 'Flutter 2.8, Bloc pattern for state management, Firebase Cloud Firestore, Firebase Cloud Functions',
       year: 2023,
-      image: '/placeholder.svg?height=200&width=300',
+      image: '/images/e-pay.jpeg',
       link: 'https://example.com/e-pay'
     },
     {
       name: 'Propsearch',
-      shortDesc: 'Real estate marketplace',
+      shortDesc: 'Real estate  website marketplace',
       tech: 'Next.js',
       detailedTech: 'Next.js 12, React 18, TypeScript, Tailwind CSS, Prisma ORM, PostgreSQL database',
-      year: 2023,
-      image: '/placeholder.svg?height=200&width=300',
+      year: 2024,
+      image: '/images/prop.png',
+      link: 'https://example.com/propsearch'
+    },
+    {
+      name: 'Swiftly Mobile Application',
+      shortDesc: 'City Council mobile application for easier reports and communication with user',
+      tech: 'Flutter',
+      detailedTech: 'Flutter, Pocketbase, Firebase, PostgreSQL database',
+      year: 2024,
+      image: '/images/green.jpeg',
       link: 'https://example.com/propsearch'
     },
   ]
@@ -402,12 +411,11 @@ export default function Component() {
     { name: 'Flutter', level: 90 },
     { name: 'Firebase', level: 85 },
     { name: 'Kotlin', level: 80 },
-    { name: 'Angular', level: 75 },
-    { name: 'React', level: 85 },
+    { name: 'Angular', level: 95 },
+    { name: 'React', level: 95 },
     { name: 'Next.js', level: 80 },
-    { name: 'Python', level: 70 },
     { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 75 },
+    
   ]
 
   useEffect(() => {
@@ -468,7 +476,8 @@ export default function Component() {
               { year: 2018, title: 'The Beginning', description: 'Started with Visual Basic in high school' },
               { year: 2021, title: 'Expanding Horizons', description: 'Completed Python course on Udemy' },
               { year: 2021, title: 'Professional Growth', description: 'Joined Afrosoft Holdings' },
-              { year: 2023, title: 'Mastering Web Dev', description: 'Created Propsearch using Next.js' },
+              { year: 2021, title: 'Mastering Mobile Dev', description: 'Started Mobile App Development' },
+              { year: 2024, title: 'Mastering Web Dev', description: 'Created Propsearch using Next.js' },
             ].map((event, index) => (
               <motion.div
                 key={event.year}
@@ -491,7 +500,7 @@ export default function Component() {
         </GlassCard>
       </section>
 
-      <section className="min-h-screen flex items-center justify-center relative py-20">
+      {/* <section className="min-h-screen flex items-center justify-center relative py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -534,7 +543,60 @@ export default function Component() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      <section className="min-h-screen flex items-center justify-center relative py-20">
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project, index) => (
+        <motion.div
+          key={project.name}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <GlassCard className="p-6 h-full flex flex-col justify-between">
+            <div>
+              <div className="w-full aspect-w-16 aspect-h-9 mb-4">
+                <img 
+                  src={project.image} 
+                  alt={project.name} 
+                  className="w-full h-full object-cover rounded-md" 
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+              <p className="text-gray-300 mb-4">{project.shortDesc}</p>
+              <p className="text-sm text-blue-300 mb-4">{project.tech}</p>
+            </div>
+            <div>
+              <details className="text-sm text-gray-400">
+                <summary className="cursor-pointer hover:text-white transition-colors duration-300">
+                  Detailed Tech Stack
+                </summary>
+                <p className="mt-2">{project.detailedTech}</p>
+              </details>
+              <div className="flex justify-between items-center mt-4">
+                <span className="inline-block bg-white bg-opacity-20 rounded-full px-3 py-1 text-sm font-semibold">
+                  {project.year}
+                </span>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </GlassCard>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section className="min-h-screen flex items-center justify-center relative py-20">
         <GlassCard className="p-8 max-w-4xl w-full">
