@@ -622,7 +622,7 @@ export default function Component() {
                   <span>WhatsApp</span>
                 </a>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+263780630422"
                   className="flex items-center space-x-3 text-white hover:text-blue-400 transition-colors duration-300"
                 >
                   <FaPhone className="text-2xl" />
