@@ -70,6 +70,15 @@ export default function Component() {
       link: 'https://www.afrocodemy.co.zw'
     },
     {
+      name: 'ZanuPf Mobile Application',
+      shortDesc: 'Party mobile application built for the  community by theruling party in Zimbabwe',
+      tech: 'Flutter',
+      detailedTech: 'Flutter, Pocketbase, Firebase, PostgreSQL database',
+      year: 2023,
+      image: '/images/SplashScreen.png',
+      link: 'https://example.com/propsearch'
+    },
+    {
       name: 'E-Pay',
       shortDesc: 'Mobile payment application',
       tech: 'Flutter',
@@ -95,6 +104,15 @@ export default function Component() {
       year: 2024,
       image: '/images/green.jpeg',
       link: 'https://example.com/propsearch'
+    },
+    {
+      name: 'ChangeBucks Mobile Application',
+      shortDesc: 'Microfinance mobile application for easier transactions and great financial services',
+      tech: 'Flutter',
+      detailedTech: 'Flutter, Java',
+      year: 2024,
+      image: '/images/change_bucks.png',
+      link: 'https://example.com/changebucks'
     },
   ]
 
@@ -147,7 +165,7 @@ export default function Component() {
             <h1 className="text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
               Tatenda Mhaka
             </h1>
-            <p className="text-2xl mb-8 text-gray-300">Innovative Software Developer | Mobile App Developer | Web Developer</p>
+            <p className="text-2xl mb-8 text-gray-300">Software Engineer | Mobile App Developer | Web Developer</p>
             <motion.button
               className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-bold py-2 px-6 rounded-full transition duration-300"
               whileHover={{ scale: 1.05 }}
@@ -167,8 +185,9 @@ export default function Component() {
               { year: 2018, title: 'The Beginning', description: 'Started with Visual Basic in high school' },
               { year: 2021, title: 'Expanding Horizons', description: 'Completed Python course on Udemy' },
               { year: 2021, title: 'Professional Growth', description: 'Joined Afrosoft Holdings' },
-              { year: 2021, title: 'Mastering Mobile Dev', description: 'Started Mobile App Development' },
-              { year: 2024, title: 'Mastering Web Dev', description: 'Created Propsearch using Next.js' },
+              { year: 2022, title: 'Mastering Mobile Dev', description: 'Started Mobile App Development' },
+             
+{ year: 2024, title: 'Mastering Web Dev', description: 'Created Propsearch using Next.js' },
             ].map((event, index) => (
               <motion.div
                 key={event.year}
